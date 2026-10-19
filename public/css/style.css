@@ -1,0 +1,354 @@
+/* soulignement de page*/
+.pageSL {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #242424;
+    width: 100%;
+}
+
+/* Reset simple */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout général */
+body {
+    background-color: #fffad8;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Titres */
+h1 {
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+/* Conteneur principal */
+.container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background: #070d5f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Formulaires */
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons */
+button {
+    background: #0d61af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #070d5f;
+}
+
+a {
+    text-decoration: none;
+    color: #0d61af;
+    margin-left: 10px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: #070d5f;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Contenu gauche */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo:hover {
+    color:white;
+}
+
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: #070d5f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.dropbtn:hover {
+    background: #3d516e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+/* Affichage au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Décalage du contenu (IMPORTANT) */
+.container {
+    margin-top: 75px;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 55px; /* hauteur de la navbar */
+    left: 0;
+    width: 40px;
+    height: calc(100vh - 55px);
+    background: #0d61af;
+    padding-top: 20px;
+    z-index: 900;
+    border-right: 1px solid #000;
+}
+
+.sidebar a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 12px 0px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #3d516e;
+}
+
+/* Décalage du contenu principal */
+.machine-detail {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.machine-detail .row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.machine-detail .row:last-child {
+    border-bottom: none;
+}
+
+.machine-detail .row span:first-child {
+    font-weight: bold;
+    color: #444;
+}
+
+.machine-detail .row.full {
+    grid-template-columns: 200px 1fr;
+}
+
+/* Page recherche */
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group label {
+    flex: 4;
+    margin-left: 5px;
+}
+.form-group input {
+    flex: 2;
+    padding: 8px;
+}
+.form-group button {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Connexion */
+.containerConnect {
+    background: #f9f9f9;
+    padding: 30px 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 510px;
+    margin: 150px auto;
+}
+
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.form-inline label {
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.form-inline input {
+    width: 300px;
+    padding: 10px 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.form-bouton {
+    text-align: right; 
+    margin-top: 20px;
+}
+
+.form-bouton button {
+    padding: 10px 15px;
+    background: #0d61af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-bouton button:hover {
+    background: #070d5f;
+}
+
+/* Design accueil */
+.tabAcc{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabAcc th {
+    background: #f9f9f9;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabAcc td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabAcc tr:hover {
+    background: #f1f1f1;
+}
+
+.tabAcc button {
+    width: 100%;
+    background: #0d61af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tabAcc button:hover {
+    background: #070d5f;
+}

@@ -1,0 +1,31 @@
+V 1 - Affichage du matériel (général)
+V 2 - Affichage du matériel (Page détaillé pour une machine)
+V 3 - Filtrage par PE/Type/Status/Unité/Sites/Services/User
+V 4 - Compter le nombre de ligne
+V 5 - Ajouter une machine
+V 6 - Modifier une machine
+V 7 - Recherche plus précise (PE entre PE + Matricule_USER + note) + unité + local
+V 7.1 - Recherche toutes les personnes qui ont plus d'une machine
+V 7.2 - Nouvelle page détaillant toutes les machines que possèdent une personne
+V 8 - Enregistrement d'une recherche (Export via EXCEL ou PDF)
+V 9 - Eviter les doublons lors d'ajout de machine
+V 10 - Connexion user = page de matériel dédiée (Exemple : utilisateur de charleroi ne verra que le matériel a charleroi [SAUF ADMIN])
+V 11 - En fonction d'un rôle attribué une page dédiée (Exemple : Visiteur ne peut pas modifier ou ajouter une machine)
+V 12 - Optimiser le déplacement des fichiers (pour retirer le REQUIRE ONCE)
+V 13 - Ajouter le code unité dans les services
+V 14 - Dans le filtrage, faire en sorte que si on sélectionne un site, qu'on puisse voir uniquement dans les selects les unités du site et les service du site
+V 15 - Lien dans show pour rediriger vers tout le matériel d'une personne
+V 16 - Changer l'input TYPE dans l'inventaire en select en évitant les redondances (grâce au Distinct)
+V 17 - Modifier les SELECT de la page inventaire.php et search.php pour ne voir que les SELECT lié au matricule en session
+X    -> Impossible pour les sites car il n'est jamais lié à un utilisateur ou une unité.
+V 18 - Phase de test
+V 19 - Correctif a réaliser
+V    -> Bug concernant site/service/unité
+V    -> Rajouter un bouton détail pour les machines dans infoUser
+V    -> Dans machineUser, trier par ordre alphabétique
+V    -> IMEI, mettre une restriction pour n'avoir que des nombres
+V    -> Lien entre unité/service/site dans create et edit
+V    -> user_fk = pouvoir insérer automatiquement l'utilisateur en session
+V    -> Trier par DESC l'inventaire et la recherche (create & search)
+V    -> Dans search.php faire la méthode de recherche site/service/unité
+! 20 - Réalisation de la documentation pour l'ensemble de l'application
